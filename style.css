@@ -1,0 +1,158 @@
+/* FONT IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* GENERAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+/* WORKING ABSOLUTE POS; NO RESPONSIVE NEEDED */
+
+/* MAIN CONTAINER FOR CARD*/
+
+.container {
+    position: relative;
+    width: 350px;
+    height: 600px;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow:
+        1.1px 0.8px 10px rgba(0, 0, 0, 0.085),
+        9px 6px 80px rgba(0, 0, 0, 0.17);
+}
+
+.container .top {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 25px;
+    left: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .bottom {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 325px;
+    left: 25px;
+}
+
+/* TOP-CARD */
+.container .top .img-one {
+    z-index: -1;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container .top .img-two {
+    position: absolute;
+    padding: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: hsla(178, 100%, 50%, 0.45);
+    transform: translate(-50%, -50%);
+    transition: ease-in-out .1s;
+    opacity: 0;
+}
+
+/* ---------CHANGES ON HOVER---------- */
+.container .top .img-two:hover {
+    opacity: 1;
+}
+
+/* BOTTOM-CARD WITH SUB-SECTIONS */
+
+.bottom h1 {
+    margin: 10px 0;
+    height: 55px;
+    line-height: 55px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.bottom>p {
+    height: 50px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+/* -------SUB SECTION 1 ------- */
+.bottom>.bottom-in-one {
+    height: 70px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-in-one>.value {
+    display: inherit;
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.bottom-in-one>.timer {
+    display: inherit;
+}
+
+/* -------SUB SECTION 2 ------- */
+.bottom>.bottom-in-two {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    font-size: 16px;
+}
+
+.bottom-in-two>img {
+    max-height: 50%;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+.bottom-in-two>p {
+    margin-left: 15px;
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+    position: absolute;
+    bottom: 0%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
