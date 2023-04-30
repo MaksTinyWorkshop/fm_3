@@ -48,6 +48,8 @@ I tried to work this thime with absolute positions because we don't need respons
 I could aslo work with a little transition opacity on the :hover effect of the image.
 What is very cool with coding is that you always have more than one way to solve a problem.
 
+I don't know what happens with the avatar .png, which display well on my love server preview, and once I've pushed it on github and displayed with live site url, there is a display bug with it. I don't understand why...
+
 ## Author
 
 - Frontend Mentor - [@makstinyworkshop](https://www.frontendmentor.io/profile/makstinyworkshop)
